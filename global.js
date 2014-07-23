@@ -70,20 +70,6 @@ function stmarks_globalJavascript() {
 	// http://stackoverflow.com/a/950146
 
 	$.getScript(
-		pathToScripts + 'resources-menu.js',
-		function() {
-			stmarks_resourcesMenu();
-		}
-	);	
-	
-	$.getScript(
-		pathToScripts + 'faculty-journal.js',
-		function() {
-			stmarks_facultyJournal();
-		}
-	);
-		
-	$.getScript(
 		pathToScripts + 'hide-future-courses.js',
 		function() {
 			stmarks_hideFutureCourses();
@@ -101,13 +87,6 @@ function stmarks_globalJavascript() {
 		pathToScripts + 'discussion-permalinks.js',
 		function() {
 			stmarks_discussionPermalinks();
-		}
-	);
-	
-	$.getScript(
-		pathToScripts + 'grading-analytics.js',
-		function() {
-			stmarks_gradingAnalytics();
 		}
 	);
 }
