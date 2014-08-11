@@ -93,7 +93,7 @@ function stmarks_globalJavascript() {
 	$.getScript(
 		pathToScripts + 'navigation-menu/navigation-menu.js',
 		function() {
-			stmarks_discussionPermalinks();
+			stmarks_navigationMenu();
 		}
 	);
 
