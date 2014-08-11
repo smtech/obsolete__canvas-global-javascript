@@ -100,14 +100,14 @@ function stmarks_globalJavascript() {
 	$.getScript(
 		pathToScripts + 'faculty-journal/faculty-journal.js',
 		function() {
-			stmarks_discussionPermalinks();
+			stmarks_facultyJournal();
 		}
 	);
 
 	$.getScript(
 		pathToScripts + 'grading-analytics/grading-analytics.js',
 		function() {
-			stmarks_discussionPermalinks();
+			stmarks_gradingAnalytics();
 		}
 	);
 }
