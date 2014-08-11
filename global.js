@@ -103,6 +103,13 @@ function stmarks_globalJavascript() {
 			stmarks_discussionPermalinks();
 		}
 	);
+
+	$.getScript(
+		pathToScripts + 'grading-analytics/grading-analytics.js',
+		function() {
+			stmarks_discussionPermalinks();
+		}
+	);
 }
 
 stmarks_globalJavascript();
