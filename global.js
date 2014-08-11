@@ -89,6 +89,13 @@ function stmarks_globalJavascript() {
 			stmarks_discussionPermalinks();
 		}
 	);
+
+	$.getScript(
+		pathToScripts + 'navigation-menu/navigation-menu.js',
+		function() {
+			stmarks_discussionPermalinks();
+		}
+	);
 }
 
 stmarks_globalJavascript();

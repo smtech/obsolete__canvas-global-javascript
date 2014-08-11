@@ -1,0 +1,3 @@
+[submodule "navigation-menu"]
+	path = navigation-menu
+	url = git@github.com:smtech/smcanvas-navigation-menu.git
