@@ -96,6 +96,13 @@ function stmarks_globalJavascript() {
 			stmarks_discussionPermalinks();
 		}
 	);
+
+	$.getScript(
+		pathToScripts + 'faculty-journal/faculty-journal.js',
+		function() {
+			stmarks_discussionPermalinks();
+		}
+	);
 }
 
 stmarks_globalJavascript();
