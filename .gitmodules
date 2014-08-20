@@ -1,9 +1,12 @@
 [submodule "navigation-menu"]
 	path = navigation-menu
 	url = git@github.com:smtech/smcanvas-navigation-menu.git
+	fetchRecurseSubmodules = true
 [submodule "faculty-journal"]
 	path = faculty-journal
 	url = git@github.com:smtech/smcanvas-faculty-journal.git
+	fetchRecurseSubmodules = true
 [submodule "grading-analytics"]
 	path = grading-analytics
 	url = git@github.com:smtech/smcanvas-grading-analytics.git
+	fetchRecurseSubmodules = true
