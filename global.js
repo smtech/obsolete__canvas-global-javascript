@@ -1,7 +1,8 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true */
 
 var STMARKS = {
-	waitForDOMDelay: 100 // milliseconds
+	waitForDOMDelay: 100, // milliseconds
+	user_id: document.getElementById('identity').getElementsByClassName('user_id')[0].innerHTML
 };
 
 /* wait for a particular DOM element to be ready (i.e. created) and then call
@@ -91,11 +92,11 @@ function stmarks_globalJavascript() {
 	);
 
 	$.getScript(
-		pathToScripts + 'navigation-menu/navigation-menu.js',
+		pathToScripts + 'navigation-menu/navigation-menu.php?user_id=' + STMARKS.user_id + '&location=' + window.location,
 		function() {
 			stmarks_navigationMenu();
 		}
-	);
+	);	
 
 	$.getScript(
 		pathToScripts + 'faculty-journal/faculty-journal.js',
