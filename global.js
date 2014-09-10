@@ -106,7 +106,7 @@ function stmarks_globalJavascript() {
 	);
 
 	$.getScript(
-		pathToScripts + 'grading-analytics/grading-analytics.js',
+		pathToScripts + 'grading-analytics/grading-analytics.php?user_id=' + STMARKS.user_id + '&location=' + window.location,
 		function() {
 			stmarks_gradingAnalytics();
 		}
