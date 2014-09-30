@@ -99,7 +99,7 @@ function stmarks_globalJavascript() {
 	);	
 
 	$.getScript(
-		pathToScripts + 'faculty-journal/faculty-journal.js',
+		pathToScripts + 'faculty-journal/faculty-journal.php',
 		function() {
 			stmarks_facultyJournal();
 		}
