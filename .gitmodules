@@ -10,3 +10,6 @@
 	path = grading-analytics
 	url = git@github.com:smtech/smcanvas-grading-analytics.git
 	fetchRecurseSubmodules = true
+[submodule "smcanvaslib"]
+	path = smcanvaslib
+	url = git@github.com:smtech/smcanvaslib.git

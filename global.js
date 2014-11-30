@@ -40,7 +40,8 @@ function stmarks_waitForDOMById(UrlPattern, nodeId, callback) {
 function stmarks_waitForDOMByClassName(UrlPattern, className, callback) {
 	if (UrlPattern.test(document.location.href)) {
 		var DOMElements = document.getElementsByClassName(className);
-		if (DOMElements !== undefined) {
+		if (DOMElements.length > 0) {
+			alert('callback');
 			callback(DOMElements);
 		} else {
 			window.setTimeout(
@@ -88,6 +89,13 @@ function stmarks_globalJavascript() {
 		pathToScripts + 'discussion-permalinks.js',
 		function() {
 			stmarks_discussionPermalinks();
+		}
+	);
+
+	$.getScript(
+		pathToScripts + 'scheduler-roster.php',
+		function() {
+			stmarks_schedulerRoster();
 		}
 	);
 
