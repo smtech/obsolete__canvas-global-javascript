@@ -2,7 +2,6 @@
 
 require_once(__DIR__ . '/.ignore.custom-prefs-authentication.inc.php');
 require_once('smcanvaslib/config.inc.php');
-require_once('smcanvaslib/include/working-directory.inc.php');
 require_once('smcanvaslib/include/canvas-api.inc.php');
 
 if (isset($_REQUEST['appointment_group_id']) && is_numeric($_REQUEST['appointment_group_id'])) {
@@ -39,7 +38,7 @@ function stmarks_addSchedulerRosterLink(appointmentGroup) {
 	appointmentGroup = appointmentGroup[0];
 	appointmentGroupId = appointmentGroup.getAttribute('data-appointment-group-id');
 	signups = appointmentGroup.getElementsByClassName('ag-x-of-x-signed-up')[0];
-	signups.innerHTML = signups.innerHTML + ' &mdash; <a href="<?= buildPath(APP_URL, basename(__FILE__)) ?>?appointment_group_id=' + appointmentGroupId + '" target="_blank">Print Roster</a>';
+	signups.innerHTML = signups.innerHTML + ' &mdash; <a href="<?= APP_URL . '/' . basename(__FILE__) ?>?appointment_group_id=' + appointmentGroupId + '" target="_blank">Print Roster</a>';
 }
 
 function stmarks_schedulerRoster() {

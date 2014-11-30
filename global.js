@@ -41,7 +41,6 @@ function stmarks_waitForDOMByClassName(UrlPattern, className, callback) {
 	if (UrlPattern.test(document.location.href)) {
 		var DOMElements = document.getElementsByClassName(className);
 		if (DOMElements.length > 0) {
-			alert('callback');
 			callback(DOMElements);
 		} else {
 			window.setTimeout(
