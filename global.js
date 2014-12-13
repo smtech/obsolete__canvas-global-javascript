@@ -59,9 +59,9 @@ function stmarks_globalJavascript() {
 	
 	/* start by framebusting -- which seems hostile, but really just lets us link
 	   across courses without ending up with stupidly nested frames */
-	if (top.location != self.location) {
+	/* if (top.location != self.location) {
     	top.location = self.location.href;
-	}
+	} */
 
 	
 	// modeled on http://stackoverflow.com/a/984656, which I found to be unreliable
