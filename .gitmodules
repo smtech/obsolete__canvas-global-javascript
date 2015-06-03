@@ -13,3 +13,6 @@
 [submodule "smcanvaslib"]
 	path = smcanvaslib
 	url = git@github.com:smtech/smcanvaslib.git
+[submodule "templates"]
+	path = templates
+	url = git@github.com:smtech/smcanvas-templates.git
