@@ -126,6 +126,13 @@ function stmarks_globalJavascript() {
 			stmarks_gradingAnalytics();
 		}
 	);
+
+	$.getScript(
+		pathToScripts + 'templates/templates.php?user_id=' + STMARKS.user_id + '&location=' + window.location,
+		function() {
+			stmarks_templates();
+		}
+	);
 }
 
 stmarks_globalJavascript();
