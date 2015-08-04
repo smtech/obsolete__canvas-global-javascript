@@ -133,6 +133,13 @@ function stmarks_globalJavascript() {
 			stmarks_templates();
 		}
 	);
+	
+	$.getScript(
+		pathToScripts + 'open-submission-preview.js',
+		function() {
+			stmarks_openSubmissionPreview();
+		}
+	);
 }
 
 stmarks_globalJavascript();
