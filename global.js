@@ -140,6 +140,13 @@ function stmarks_globalJavascript() {
 			stmarks_openSubmissionPreview();
 		}
 	);
+	
+	$.getScript(
+		pathToScripts + 'show-cached-rubric.js',
+		function() {
+			stmarks_showCachedRubric();
+		}
+	);
 }
 
 stmarks_globalJavascript();
