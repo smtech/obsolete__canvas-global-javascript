@@ -6,3 +6,7 @@ Miscellaneous one-off JavaScript add-ons (see [below](#dev-javascript-1) for unm
 
   - [hide-page-lists-if-pages-hidden](/hide-page-lists-if-pages-hidden.js) removes the lists of recently modified and all pages from the right sidebar if the Pages link is not available in the left sidebar (so user's without permission to browse Pages cannot browse pages, per [this feature request](https://help.instructure.com/entries/21511835-Hide-All-Pages-List-when-Pages-is-Removed-from-Navigation))
   - [discussion-permalinks](/discussion-permalinks.js) reveals the permalinks to individual replies in Canvas discussions and announcements.
+
+### Obsolete
+
+This repository has been abandoned in favor of more modular customization via [CanvasHack](https://github.com/smtech/canvas).
