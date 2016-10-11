@@ -1,3 +1,7 @@
+# Obsolete
+
+Abandoned in favor of the easier to maintain and extend [smtech/canvashack](https://github.com/smtech/canvashack) framework.
+
 # Global JavaScript
 
 Miscellaneous one-off JavaScript add-ons (see [below](#dev-javascript-1) for unmerged scripts):
